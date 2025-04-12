@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Все про чай</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #7da36c;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    section {
+      display: none;
+      margin-top: 20px;
+    }
+    section.active {
+      display: block;
+    }
+    footer {
+      background-color: #e2e2e2;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      margin-top: 40px;
+      color: #555;
+    }
+    ul, ol {
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #5b824e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Все про чай</h1>
+    <nav>
+      <a onclick="showSection('home')">Головна</a>
+      <a onclick="showSection('types')">Види чаю</a>
+      <a onclick="showSection('benefits')">Користь</a>
+    </nav>
+  </header>
+  <main>
+    <!-- ГОЛОВНА -->
+  <section id="home" class="active">
+  <h2>Ласкаво просимо!</h2>
+  <p>Чай — один з найдавніших напоїв у світі. Його історія налічує понад 5000 років і бере початок у Китаї. З часом чай став популярним у всьому світі, і сьогодні існує безліч його різновидів та способів приготування.</p>
+  <p>Цей сайт створено для того, щоб розповісти більше про чай — його види, властивості та користь для здоров’я.</p>
+  <img src="https://imglife.pravda.com.ua/life/images/doc/1/f/28405/1f21e11-depositphotos-tankist276-600.jpg?w=1920&q=90" alt="Чашка зеленого чаю">
+  <p>Насолоджуйтесь подорожжю у світ ароматного та корисного напою!</p>
+</section>
+
+
+
+    <!-- ВИДИ ЧАЮ -->
+    <section id="types">
+      <h2>Основні види чаю</h2>
+      <ul>
+        <li><strong>Зелений чай</strong> — виготовляється без ферментації, зберігає природний зелений колір. Має тонізуючий ефект, містить багато антиоксидантів.</li>
+        <li><strong>Чорний чай</strong> — повністю ферментований, має насичений смак та темний колір. Один з найпопулярніших чаїв у світі.</li>
+        <li><strong>Білий чай</strong> — найменш оброблений, виготовляється з молодих бруньок чайного листа. Дуже ніжний на смак і багатий на поліфеноли.</li>
+        <li><strong>Улун (оолонг)</strong> — частково ферментований чай, поєднує властивості зеленого і чорного чаю. Має фруктово-квітковий аромат.</li>
+        <li><strong>Пуер</strong> — ферментований і витриманий чай родом із провінції Юньнань. Має глибокий "землистий" смак і корисний для травлення.</li>
+        <li><strong>Трав’яний чай</strong> — насправді не чай, а настої з трав, ягід і спецій. Не містить кофеїну, має заспокійливі або лікувальні властивості.</li>
+      </ul>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHPHkYwAc7nI7iLxZHRPfiejmpRocP7Xr3Zg&s" alt="Різні види чаю">
+    </section>
+
+    <!-- КОРИСТЬ ЧАЮ -->
+    <section id="benefits">
+      <h2>Користь чаю для здоров’я</h2>
+      <ol>
+        <li><strong>Багатий на антиоксиданти</strong> — допомагає боротися зі старінням клітин і вільними радикалами.</li>
+        <li><strong>Покращує травлення</strong> — особливо пуер і зелений чай стимулюють роботу шлунково-кишкового тракту.</li>
+        <li><strong>Знижує рівень стресу</strong> — деякі сорти чаю містять L-теанін, що сприяє розслабленню без сонливості.</li>
+        <li><strong>Підвищує концентрацію</strong> — завдяки м'якому вмісту кофеїну, чай тонізує без різких стрибків енергії, як кава.</li>
+        <li><strong>Сприяє зміцненню імунітету</strong> — особливо трав’яні чаї з імбиром, м’ятою, ромашкою або шипшиною.</li>
+        <li><strong>Може допомогти у зниженні ваги</strong> — зелений та улун чай прискорюють метаболізм.</li>
+      </ol>
+      <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a" alt="Користь чаю">
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Інформація про чай</p>
+  </footer>
+
+  <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(section => {
+        section.classList.remove("active");
+      });
+      document.getElementById(sectionId).classList.add("active");
+    }
+  </script>
+</body>
+</html>
+
